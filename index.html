@@ -41,10 +41,7 @@
     <div class="form-container">
       <div class="form-header">
         <h1>Welcome to <em class="logo-text">ExpliTech!</em></h1>
-        <p>
-            Making learning civil engineering, programming, and editing
-            technologies easier and accessible for all.
-        </p>
+        <p class="slogan">Explaining technology, Empowering learners</p>
         <p>
           <em>Sign up now</em> to explore our vast range of learning materials
           and stay connected to the latest in technology and engineering.
@@ -55,11 +52,21 @@
         <form class="form-row-group" action="" method="get">
           <div class="form-row">
             <label for="first-name" class="first-name">First Name</label>
-            <input type="text" id="first-name" name="first-name" />
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="Thor"
+            />
           </div>
           <div class="form-row">
             <label for="last-name" class="last-name">Last Name</label>
-            <input type="text" id="last-name" name="last-name" />
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Odinson"
+            />
           </div>
           <div class="form-row">
             <label for="email" class="email">Email</label>
@@ -67,15 +74,34 @@
           </div>
           <div class="form-row">
             <label for="phone" class="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              minlength="10"
+              maxlength="10"
+              title="Phone number must be a 10 digit number"
+            />
           </div>
           <div class="form-row">
             <label for="password" class="password">Password</label>
-            <input type="password" id="password" name="password" />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$"
+              title="Password must contain at least 8 characters, including 1 uppercase letter, 1 lowercase letter, 1 number, and 1 symbol."
+            />
           </div>
           <div class="form-row">
             <label for="re-password" class="password">Confirm Password</label>
-            <input type="password" id="re-password" name="re-password" />
+            <input
+              type="password"
+              id="re-password"
+              name="re-password"
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$"
+              title="Please match the Passwords"
+            />
           </div>
         </form>
       </div>

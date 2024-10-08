@@ -133,7 +133,7 @@ body {
 
 .form-header h1 {
   font-size: 2.25rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .form {
@@ -172,8 +172,14 @@ body {
 }
 
 .form-row input:invalid {
-  border: 1px solid #d55c5f;
+  border: 2px solid #d55c5f;
   color: #d55c5f;
+  box-shadow: none;
+}
+
+.form-row input:focus:valid {
+  border: 2px solid #28a745;
+  color: #28a745;
   box-shadow: none;
 }
 
@@ -238,7 +244,12 @@ p button {
   transition: all 0.3s ease;
 }
 
-@media only screen and (min-width: 700px) {
+.slogan {
+  font-style: italic;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 1067px) {
   body {
     flex-direction: row;
     justify-content: center;
