@@ -39,16 +39,48 @@
       </div>
     </div>
     <div class="form-container">
-      <div class="heading">
-        <h1>Welcome to <em>ExpliTech!</em></h1>
-        <h2>
+      <div class="form-header">
+        <h1>Welcome to <em class="logo-text">ExpliTech!</em></h1>
+        <p>
           Making learning civil engineering, programming, and editing
-          technologies easier and accessible for all. Sign up now to explore our
-          vast range of learning materials and stay connected to the latest in
-          technology and engineering.
-        </h2>
-        <div class="form">
-          <form action="" method="get"></form>
+          technologies easier and accessible for all.
+        </p>
+        <p>
+          <em>
+            Sign up now to explore our vast range of learning materials and stay
+            connected to the latest in technology and engineering.
+          </em>
+        </p>
+      </div>
+      <div class="form">
+        <div><h2>Let's do this!</h2></div>
+        <form action="" method="get">
+          <div class="form-row">
+            <label for="first-name" class="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" />
+            <label for="last-name" class="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" />
+          </div>
+          <div class="form-row">
+            <label for="email" class="email">Email</label>
+            <input type="email" id="email" name="email" />
+            <label for="phone" class="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+          <div class="form-row">
+            <label for="password" class="password">Password</label>
+            <input type="password" id="password" name="password" />
+            <label for="re-password" class="password">Password</label>
+            <input type="password" id="re-password" name="re-password" />
+          </div>
+        </form>
+      </div>
+      <div class="form-action">
+        <div class="button">
+          <button type="submit">Create Account</button>
+        </div>
+        <div>
+          <p>Already have an account? <button>log in</button></p>
         </div>
       </div>
     </div>

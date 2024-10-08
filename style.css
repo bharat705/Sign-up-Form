@@ -1,15 +1,54 @@
-@import url('./fonts.css');
+@import url("./fonts.css");
 
-* {
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
+* {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  font: inherit;
+}
+
 body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
+  color: black;
+
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 1.5rem;
 }
 
 .graphics-container {
@@ -26,10 +65,10 @@ body {
   bottom: 0;
   padding: 10px 0px;
 
-  background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   width: 40%;
   color: #f1f1f1;
+  font-size: 0.5rem;
 
   display: flex;
   justify-content: center;
@@ -58,7 +97,7 @@ body {
 .logo {
   color: white;
   font-family: "Audiowide", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 .illustration {
@@ -75,8 +114,24 @@ body {
 
 .form-container {
   width: 60%;
-  padding: 40px;
   display: flex;
+  background-color: #f6f7f8;
   flex-direction: column;
   justify-content: center;
+}
+
+.form-header {
+  width: 100%;
+  padding: 50px;
+
+  font-weight: 700;
+}
+
+.logo-text {
+  font-family: "Audiowide";
+}
+
+.form-header h1 {
+  font-size: 2.25rem;
+  margin-bottom: 20px;
 }
